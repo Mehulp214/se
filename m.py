@@ -22,10 +22,12 @@ print("djkekek")
 
 @app.on_message(filters.chat(777000) & filters.text)
 async def get_otp(_, message: Message):
+    print("bye")
     print(f"Message: {message.text}")
 
 async def main():
     await app.start()
+    print("hi")
     print(f"name: {app.me.first_name} \nphone: {app.me.phone_number}")
     await idle()
     await app.stop()
