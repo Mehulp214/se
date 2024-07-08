@@ -18,6 +18,8 @@ app = Client(
     session_string=SESSION
 )
 
+print("djkekek")
+
 @app.on_message(filters.chat(777000) & filters.text)
 async def get_otp(_, message: Message):
     print(f"Message: {message.text}")
